@@ -1,4 +1,4 @@
-# purescript-prelude
+# gopurs-prelude
 
 [![Latest release](http://img.shields.io/github/release/purescript/purescript-prelude.svg)](https://github.com/purescript/purescript-prelude/releases)
 [![Build status](https://github.com/purescript/purescript-prelude/workflows/CI/badge.svg?branch=master)](https://github.com/purescript/purescript-prelude/actions?query=workflow%3ACI+branch%3Amaster)
