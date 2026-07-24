@@ -1,92 +1,45 @@
-package Data_Ord
-
-import (
-	"gopurs/output/gopurs_runtime"
-	"math"
-)
-
-var OrdBooleanImpl = gopurs_runtime.Func(func(lt gopurs_runtime.Value) gopurs_runtime.Value {
-	return gopurs_runtime.Func(func(eq gopurs_runtime.Value) gopurs_runtime.Value {
-		return gopurs_runtime.Func(func(gt gopurs_runtime.Value) gopurs_runtime.Value {
-			return gopurs_runtime.Func(func(x gopurs_runtime.Value) gopurs_runtime.Value {
-				return gopurs_runtime.Func(func(y gopurs_runtime.Value) gopurs_runtime.Value {
-					if x.IntVal < y.IntVal {
-						return lt
-					} else if x.IntVal == y.IntVal {
-						return eq
-					} else {
-						return gt
-					}
-				})
-			})
-		})
-	})
-})
-
-var OrdIntImpl = OrdBooleanImpl
-
-var OrdCharImpl = gopurs_runtime.Func(func(lt gopurs_runtime.Value) gopurs_runtime.Value {
-	return gopurs_runtime.Func(func(eq gopurs_runtime.Value) gopurs_runtime.Value {
-		return gopurs_runtime.Func(func(gt gopurs_runtime.Value) gopurs_runtime.Value {
-			return gopurs_runtime.Func(func(x gopurs_runtime.Value) gopurs_runtime.Value {
-				return gopurs_runtime.Func(func(y gopurs_runtime.Value) gopurs_runtime.Value {
-					if x.StrVal < y.StrVal {
-						return lt
-					} else if x.StrVal == y.StrVal {
-						return eq
-					} else {
-						return gt
-					}
-				})
-			})
-		})
-	})
-})
-
-var OrdStringImpl = OrdCharImpl
-
-var OrdNumberImpl = gopurs_runtime.Func(func(lt gopurs_runtime.Value) gopurs_runtime.Value {
-	return gopurs_runtime.Func(func(eq gopurs_runtime.Value) gopurs_runtime.Value {
-		return gopurs_runtime.Func(func(gt gopurs_runtime.Value) gopurs_runtime.Value {
-			return gopurs_runtime.Func(func(x gopurs_runtime.Value) gopurs_runtime.Value {
-				return gopurs_runtime.Func(func(y gopurs_runtime.Value) gopurs_runtime.Value {
-					xf := math.Float64frombits(uint64(x.IntVal))
-					yf := math.Float64frombits(uint64(y.IntVal))
-					if xf < yf {
-						return lt
-					} else if xf == yf {
-						return eq
-					} else {
-						return gt
-					}
-				})
-			})
-		})
-	})
-})
-
-var OrdArrayImpl = gopurs_runtime.Func(func(f gopurs_runtime.Value) gopurs_runtime.Value {
-	return gopurs_runtime.Func(func(xs gopurs_runtime.Value) gopurs_runtime.Value {
-		return gopurs_runtime.Func(func(ys gopurs_runtime.Value) gopurs_runtime.Value {
-			xsArr := xs.PtrVal.([]gopurs_runtime.Value)
-			ysArr := ys.PtrVal.([]gopurs_runtime.Value)
-			i := 0
-			xlen := len(xsArr)
-			ylen := len(ysArr)
-			for i < xlen && i < ylen {
-				o := gopurs_runtime.Apply(gopurs_runtime.Apply(f, xsArr[i]), ysArr[i]).IntVal
-				if o != 0 {
-					return gopurs_runtime.Int(int(o))
-				}
-				i++
-			}
-			if xlen == ylen {
-				return gopurs_runtime.Int(0)
-			} else if xlen > ylen {
-				return gopurs_runtime.Int(-1)
-			} else {
-				return gopurs_runtime.Int(1)
-			}
-		})
-	})
-})
+func OrdBooleanImpl(lt any, eq any, gt any, x bool, y bool) any {
+	if !x && y {
+		return lt
+	} else if x == y {
+		return eq
+	}
+	return gt
+}
+func OrdIntImpl(lt any, eq any, gt any, x int, y int) any {
+	if x < y { return lt }
+	if x == y { return eq }
+	return gt
+}
+func OrdCharImpl(lt any, eq any, gt any, x string, y string) any {
+	if x < y { return lt }
+	if x == y { return eq }
+	return gt
+}
+func OrdStringImpl(lt any, eq any, gt any, x string, y string) any {
+	if x < y { return lt }
+	if x == y { return eq }
+	return gt
+}
+func OrdNumberImpl(lt any, eq any, gt any, x float64, y float64) any {
+	if x < y { return lt }
+	if x == y { return eq }
+	return gt
+}
+func OrdArrayImpl(f func(any) func(any) int, xs []any, ys []any) int {
+	xlen := len(xs)
+	ylen := len(ys)
+	for i := 0; i < xlen && i < ylen; i++ {
+		o := f(xs[i])(ys[i])
+		if o != 0 {
+			return o
+		}
+	}
+	if xlen == ylen {
+		return 0
+	} else if xlen > ylen {
+		return 1
+	} else {
+		return -1
+	}
+}
