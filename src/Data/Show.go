@@ -11,7 +11,7 @@ func ShowCharImpl(c string) string {
 func ShowStringImpl(s string) string {
 	return fmt.Sprintf("%q", s)
 }
-func ShowArrayImpl(f func(any) string, arr []any) string {
+func ShowArrayImpl(f func(interface{}) string, arr []interface{}) string {
 	res := "["
 	for i, v := range arr {
 		if i > 0 {

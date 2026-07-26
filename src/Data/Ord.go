@@ -1,4 +1,4 @@
-func OrdBooleanImpl(lt any, eq any, gt any, x bool, y bool) any {
+func OrdBooleanImpl(lt interface{}, eq interface{}, gt interface{}, x bool, y bool) interface{} {
 	if !x && y {
 		return lt
 	} else if x == y {
@@ -6,27 +6,27 @@ func OrdBooleanImpl(lt any, eq any, gt any, x bool, y bool) any {
 	}
 	return gt
 }
-func OrdIntImpl(lt any, eq any, gt any, x int, y int) any {
+func OrdIntImpl(lt interface{}, eq interface{}, gt interface{}, x int, y int) interface{} {
 	if x < y { return lt }
 	if x == y { return eq }
 	return gt
 }
-func OrdCharImpl(lt any, eq any, gt any, x string, y string) any {
+func OrdCharImpl(lt interface{}, eq interface{}, gt interface{}, x string, y string) interface{} {
 	if x < y { return lt }
 	if x == y { return eq }
 	return gt
 }
-func OrdStringImpl(lt any, eq any, gt any, x string, y string) any {
+func OrdStringImpl(lt interface{}, eq interface{}, gt interface{}, x string, y string) interface{} {
 	if x < y { return lt }
 	if x == y { return eq }
 	return gt
 }
-func OrdNumberImpl(lt any, eq any, gt any, x float64, y float64) any {
+func OrdNumberImpl(lt interface{}, eq interface{}, gt interface{}, x float64, y float64) interface{} {
 	if x < y { return lt }
 	if x == y { return eq }
 	return gt
 }
-func OrdArrayImpl(f func(any) func(any) int, xs []any, ys []any) int {
+func OrdArrayImpl(f func(interface{}) func(interface{}) int, xs []interface{}, ys []interface{}) int {
 	xlen := len(xs)
 	ylen := len(ys)
 	for i := 0; i < xlen && i < ylen; i++ {

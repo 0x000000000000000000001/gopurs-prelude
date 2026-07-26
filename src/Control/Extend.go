@@ -1,5 +1,5 @@
-func ArrayExtend(f func([]any) any, arr []any) []any {
-	res := make([]any, len(arr))
+func ArrayExtend(f func([]interface{}) interface{}, arr []interface{}) []interface{} {
+	res := make([]interface{}, len(arr))
 	for i := range arr {
 		res[i] = f(arr[i:])
 	}

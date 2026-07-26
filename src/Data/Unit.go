@@ -1,1 +1,1 @@
-var Unit any = nil
+var Unit interface{} = nil

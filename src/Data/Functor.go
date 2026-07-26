@@ -1,5 +1,5 @@
-func ArrayMap(f func(any) any, arr []any) []any {
-	result := make([]any, len(arr))
+func ArrayMap(f func(interface{}) interface{}, arr []interface{}) []interface{} {
+	result := make([]interface{}, len(arr))
 	for i, v := range arr {
 		result[i] = f(v)
 	}

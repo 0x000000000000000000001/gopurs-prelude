@@ -1,1 +1,1 @@
-func UnsafeCoerce(x any) any { return x }
+func UnsafeCoerce(x interface{}) interface{} { return x }
