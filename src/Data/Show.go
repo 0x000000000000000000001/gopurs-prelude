@@ -1,5 +1,5 @@
 import "fmt"
-func ShowIntImpl(n int) string {
+func ShowIntImpl(n int64) string {
 	return fmt.Sprintf("%v", n)
 }
 func ShowNumberImpl(n float64) string {

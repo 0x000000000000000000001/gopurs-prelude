@@ -1,5 +1,5 @@
 import "math"
-func IntDegree(x int) int {
+func IntDegree(x int64) int64 {
 	if x < 0 {
 		x = -x
 	}
@@ -8,16 +8,16 @@ func IntDegree(x int) int {
 	}
 	return x
 }
-func IntDiv(x int, y int) int {
+func IntDiv(x int64, y int64) int64 {
 	if y == 0 {
 		return 0
 	}
 	if y > 0 {
-		return int(math.Floor(float64(x) / float64(y)))
+		return int64(math.Floor(float64(x) / float64(y)))
 	}
-	return int(-math.Floor(float64(x) / float64(-y)))
+	return int64(-math.Floor(float64(x) / float64(-y)))
 }
-func IntMod(x int, y int) int {
+func IntMod(x int64, y int64) int64 {
 	if y == 0 {
 		return 0
 	}
