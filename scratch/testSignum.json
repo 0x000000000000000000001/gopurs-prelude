@@ -1,0 +1,2345 @@
+{
+  "annotation": {
+    "meta": null,
+    "sourceSpan": {
+      "end": [
+        177,
+        24
+      ],
+      "start": [
+        177,
+        1
+      ]
+    },
+    "type": null
+  },
+  "bindType": "NonRec",
+  "expression": {
+    "abstraction": {
+      "abstraction": {
+        "annotation": {
+          "meta": null,
+          "sourceSpan": {
+            "end": [
+              0,
+              0
+            ],
+            "start": [
+              0,
+              0
+            ]
+          },
+          "type": null
+        },
+        "type": "Var",
+        "value": {
+          "identifier": "discard",
+          "moduleName": [
+            "Test",
+            "Main"
+          ]
+        }
+      },
+      "annotation": {
+        "meta": null,
+        "sourceSpan": {
+          "end": [
+            179,
+            96
+          ],
+          "start": [
+            179,
+            3
+          ]
+        },
+        "type": {
+          "Func": {
+            "args": [
+              {
+                "Func": {
+                  "args": [
+                    {
+                      "ADT": {
+                        "args": [],
+                        "path": [
+                          "Data",
+                          "Unit",
+                          "Unit"
+                        ]
+                      }
+                    },
+                    {
+                      "ADT": {
+                        "args": [],
+                        "path": [
+                          "Data",
+                          "Unit",
+                          "Unit"
+                        ]
+                      }
+                    }
+                  ],
+                  "ret": {
+                    "ADT": {
+                      "args": [],
+                      "path": [
+                        "Data",
+                        "Unit",
+                        "Unit"
+                      ]
+                    }
+                  }
+                }
+              },
+              {
+                "ADT": {
+                  "args": [],
+                  "path": [
+                    "Data",
+                    "Unit",
+                    "Unit"
+                  ]
+                }
+              }
+            ],
+            "ret": {
+              "ADT": {
+                "args": [],
+                "path": [
+                  "Data",
+                  "Unit",
+                  "Unit"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "argument": {
+        "abstraction": {
+          "abstraction": {
+            "annotation": {
+              "meta": {
+                "metaType": "IsForeign"
+              },
+              "sourceSpan": {
+                "end": [
+                  179,
+                  9
+                ],
+                "start": [
+                  179,
+                  3
+                ]
+              },
+              "type": {
+                "Func": {
+                  "args": [
+                    "String",
+                    "Boolean",
+                    {
+                      "ADT": {
+                        "args": [],
+                        "path": [
+                          "Data",
+                          "Unit",
+                          "Unit"
+                        ]
+                      }
+                    }
+                  ],
+                  "ret": {
+                    "ADT": {
+                      "args": [],
+                      "path": [
+                        "Data",
+                        "Unit",
+                        "Unit"
+                      ]
+                    }
+                  }
+                }
+              }
+            },
+            "type": "Var",
+            "value": {
+              "identifier": "assert",
+              "moduleName": [
+                "Test",
+                "Utils"
+              ]
+            }
+          },
+          "annotation": {
+            "meta": null,
+            "sourceSpan": {
+              "end": [
+                179,
+                63
+              ],
+              "start": [
+                179,
+                3
+              ]
+            },
+            "type": {
+              "Func": {
+                "args": [
+                  "Boolean",
+                  {
+                    "ADT": {
+                      "args": [],
+                      "path": [
+                        "Data",
+                        "Unit",
+                        "Unit"
+                      ]
+                    }
+                  }
+                ],
+                "ret": {
+                  "ADT": {
+                    "args": [],
+                    "path": [
+                      "Data",
+                      "Unit",
+                      "Unit"
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "argument": {
+            "annotation": {
+              "meta": null,
+              "sourceSpan": {
+                "end": [
+                  179,
+                  63
+                ],
+                "start": [
+                  179,
+                  10
+                ]
+              },
+              "type": "String"
+            },
+            "type": "Literal",
+            "value": {
+              "literalType": "StringLiteral",
+              "value": "Clarifies what 'signum positive zero' test is doing"
+            }
+          },
+          "type": "App"
+        },
+        "annotation": {
+          "meta": null,
+          "sourceSpan": {
+            "end": [
+              179,
+              96
+            ],
+            "start": [
+              179,
+              3
+            ]
+          },
+          "type": {
+            "Func": {
+              "args": [
+                {
+                  "ADT": {
+                    "args": [],
+                    "path": [
+                      "Data",
+                      "Unit",
+                      "Unit"
+                    ]
+                  }
+                }
+              ],
+              "ret": {
+                "ADT": {
+                  "args": [],
+                  "path": [
+                    "Data",
+                    "Unit",
+                    "Unit"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "argument": {
+          "abstraction": {
+            "abstraction": {
+              "annotation": {
+                "meta": null,
+                "sourceSpan": {
+                  "end": [
+                    0,
+                    0
+                  ],
+                  "start": [
+                    0,
+                    0
+                  ]
+                },
+                "type": null
+              },
+              "type": "Var",
+              "value": {
+                "identifier": "eq",
+                "moduleName": [
+                  "Test",
+                  "Main"
+                ]
+              }
+            },
+            "annotation": {
+              "meta": null,
+              "sourceSpan": {
+                "end": [
+                  179,
+                  96
+                ],
+                "start": [
+                  179,
+                  3
+                ]
+              },
+              "type": {
+                "Func": {
+                  "args": [
+                    "String"
+                  ],
+                  "ret": "Boolean"
+                }
+              }
+            },
+            "argument": {
+              "abstraction": {
+                "annotation": {
+                  "meta": null,
+                  "sourceSpan": {
+                    "end": [
+                      0,
+                      0
+                    ],
+                    "start": [
+                      0,
+                      0
+                    ]
+                  },
+                  "type": null
+                },
+                "type": "Var",
+                "value": {
+                  "identifier": "show",
+                  "moduleName": [
+                    "Test",
+                    "Main"
+                  ]
+                }
+              },
+              "annotation": {
+                "meta": null,
+                "sourceSpan": {
+                  "end": [
+                    179,
+                    82
+                  ],
+                  "start": [
+                    179,
+                    66
+                  ]
+                },
+                "type": "String"
+              },
+              "argument": {
+                "abstraction": {
+                  "abstraction": {
+                    "annotation": {
+                      "meta": null,
+                      "sourceSpan": {
+                        "end": [
+                          0,
+                          0
+                        ],
+                        "start": [
+                          0,
+                          0
+                        ]
+                      },
+                      "type": null
+                    },
+                    "type": "Var",
+                    "value": {
+                      "identifier": "div",
+                      "moduleName": [
+                        "Test",
+                        "Main"
+                      ]
+                    }
+                  },
+                  "annotation": {
+                    "meta": null,
+                    "sourceSpan": {
+                      "end": [
+                        179,
+                        81
+                      ],
+                      "start": [
+                        179,
+                        72
+                      ]
+                    },
+                    "type": {
+                      "Func": {
+                        "args": [
+                          "Number"
+                        ],
+                        "ret": "Number"
+                      }
+                    }
+                  },
+                  "argument": {
+                    "annotation": {
+                      "meta": null,
+                      "sourceSpan": {
+                        "end": [
+                          179,
+                          75
+                        ],
+                        "start": [
+                          179,
+                          72
+                        ]
+                      },
+                      "type": "Number"
+                    },
+                    "type": "Literal",
+                    "value": {
+                      "literalType": "NumberLiteral",
+                      "value": 1
+                    }
+                  },
+                  "type": "App"
+                },
+                "annotation": {
+                  "meta": null,
+                  "sourceSpan": {
+                    "end": [
+                      179,
+                      81
+                    ],
+                    "start": [
+                      179,
+                      72
+                    ]
+                  },
+                  "type": "Number"
+                },
+                "argument": {
+                  "annotation": {
+                    "meta": null,
+                    "sourceSpan": {
+                      "end": [
+                        179,
+                        81
+                      ],
+                      "start": [
+                        179,
+                        78
+                      ]
+                    },
+                    "type": "Number"
+                  },
+                  "type": "Literal",
+                  "value": {
+                    "literalType": "NumberLiteral",
+                    "value": 0
+                  }
+                },
+                "type": "App"
+              },
+              "type": "App"
+            },
+            "type": "App"
+          },
+          "annotation": {
+            "meta": null,
+            "sourceSpan": {
+              "end": [
+                179,
+                96
+              ],
+              "start": [
+                179,
+                3
+              ]
+            },
+            "type": "Boolean"
+          },
+          "argument": {
+            "annotation": {
+              "meta": null,
+              "sourceSpan": {
+                "end": [
+                  179,
+                  96
+                ],
+                "start": [
+                  179,
+                  86
+                ]
+              },
+              "type": "String"
+            },
+            "type": "Literal",
+            "value": {
+              "literalType": "StringLiteral",
+              "value": "Infinity"
+            }
+          },
+          "type": "App"
+        },
+        "type": "App"
+      },
+      "type": "App"
+    },
+    "annotation": {
+      "meta": null,
+      "sourceSpan": {
+        "end": [
+          179,
+          96
+        ],
+        "start": [
+          179,
+          3
+        ]
+      },
+      "type": {
+        "Func": {
+          "args": [
+            {
+              "ADT": {
+                "args": [],
+                "path": [
+                  "Data",
+                  "Unit",
+                  "Unit"
+                ]
+              }
+            }
+          ],
+          "ret": {
+            "ADT": {
+              "args": [],
+              "path": [
+                "Data",
+                "Unit",
+                "Unit"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "argument": {
+      "annotation": {
+        "meta": null,
+        "sourceSpan": {
+          "end": [
+            179,
+            96
+          ],
+          "start": [
+            179,
+            3
+          ]
+        },
+        "type": {
+          "Func": {
+            "args": [
+              {
+                "ADT": {
+                  "args": [],
+                  "path": [
+                    "Data",
+                    "Unit",
+                    "Unit"
+                  ]
+                }
+              },
+              {
+                "ADT": {
+                  "args": [],
+                  "path": [
+                    "Data",
+                    "Unit",
+                    "Unit"
+                  ]
+                }
+              }
+            ],
+            "ret": {
+              "ADT": {
+                "args": [],
+                "path": [
+                  "Data",
+                  "Unit",
+                  "Unit"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "argument": "$__unused",
+      "body": {
+        "abstraction": {
+          "abstraction": {
+            "annotation": {
+              "meta": null,
+              "sourceSpan": {
+                "end": [
+                  0,
+                  0
+                ],
+                "start": [
+                  0,
+                  0
+                ]
+              },
+              "type": null
+            },
+            "type": "Var",
+            "value": {
+              "identifier": "discard",
+              "moduleName": [
+                "Test",
+                "Main"
+              ]
+            }
+          },
+          "annotation": {
+            "meta": null,
+            "sourceSpan": {
+              "end": [
+                180,
+                74
+              ],
+              "start": [
+                180,
+                3
+              ]
+            },
+            "type": {
+              "Func": {
+                "args": [
+                  {
+                    "Func": {
+                      "args": [
+                        {
+                          "ADT": {
+                            "args": [],
+                            "path": [
+                              "Data",
+                              "Unit",
+                              "Unit"
+                            ]
+                          }
+                        },
+                        {
+                          "ADT": {
+                            "args": [],
+                            "path": [
+                              "Data",
+                              "Unit",
+                              "Unit"
+                            ]
+                          }
+                        }
+                      ],
+                      "ret": {
+                        "ADT": {
+                          "args": [],
+                          "path": [
+                            "Data",
+                            "Unit",
+                            "Unit"
+                          ]
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "ADT": {
+                      "args": [],
+                      "path": [
+                        "Data",
+                        "Unit",
+                        "Unit"
+                      ]
+                    }
+                  }
+                ],
+                "ret": {
+                  "ADT": {
+                    "args": [],
+                    "path": [
+                      "Data",
+                      "Unit",
+                      "Unit"
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "argument": {
+            "abstraction": {
+              "abstraction": {
+                "annotation": {
+                  "meta": {
+                    "metaType": "IsForeign"
+                  },
+                  "sourceSpan": {
+                    "end": [
+                      180,
+                      9
+                    ],
+                    "start": [
+                      180,
+                      3
+                    ]
+                  },
+                  "type": {
+                    "Func": {
+                      "args": [
+                        "String",
+                        "Boolean",
+                        {
+                          "ADT": {
+                            "args": [],
+                            "path": [
+                              "Data",
+                              "Unit",
+                              "Unit"
+                            ]
+                          }
+                        }
+                      ],
+                      "ret": {
+                        "ADT": {
+                          "args": [],
+                          "path": [
+                            "Data",
+                            "Unit",
+                            "Unit"
+                          ]
+                        }
+                      }
+                    }
+                  }
+                },
+                "type": "Var",
+                "value": {
+                  "identifier": "assert",
+                  "moduleName": [
+                    "Test",
+                    "Utils"
+                  ]
+                }
+              },
+              "annotation": {
+                "meta": null,
+                "sourceSpan": {
+                  "end": [
+                    180,
+                    32
+                  ],
+                  "start": [
+                    180,
+                    3
+                  ]
+                },
+                "type": {
+                  "Func": {
+                    "args": [
+                      "Boolean",
+                      {
+                        "ADT": {
+                          "args": [],
+                          "path": [
+                            "Data",
+                            "Unit",
+                            "Unit"
+                          ]
+                        }
+                      }
+                    ],
+                    "ret": {
+                      "ADT": {
+                        "args": [],
+                        "path": [
+                          "Data",
+                          "Unit",
+                          "Unit"
+                        ]
+                      }
+                    }
+                  }
+                }
+              },
+              "argument": {
+                "annotation": {
+                  "meta": null,
+                  "sourceSpan": {
+                    "end": [
+                      180,
+                      32
+                    ],
+                    "start": [
+                      180,
+                      10
+                    ]
+                  },
+                  "type": "String"
+                },
+                "type": "Literal",
+                "value": {
+                  "literalType": "StringLiteral",
+                  "value": "signum positive zero"
+                }
+              },
+              "type": "App"
+            },
+            "annotation": {
+              "meta": null,
+              "sourceSpan": {
+                "end": [
+                  180,
+                  74
+                ],
+                "start": [
+                  180,
+                  3
+                ]
+              },
+              "type": {
+                "Func": {
+                  "args": [
+                    {
+                      "ADT": {
+                        "args": [],
+                        "path": [
+                          "Data",
+                          "Unit",
+                          "Unit"
+                        ]
+                      }
+                    }
+                  ],
+                  "ret": {
+                    "ADT": {
+                      "args": [],
+                      "path": [
+                        "Data",
+                        "Unit",
+                        "Unit"
+                      ]
+                    }
+                  }
+                }
+              }
+            },
+            "argument": {
+              "abstraction": {
+                "abstraction": {
+                  "annotation": {
+                    "meta": null,
+                    "sourceSpan": {
+                      "end": [
+                        0,
+                        0
+                      ],
+                      "start": [
+                        0,
+                        0
+                      ]
+                    },
+                    "type": null
+                  },
+                  "type": "Var",
+                  "value": {
+                    "identifier": "eq",
+                    "moduleName": [
+                      "Test",
+                      "Main"
+                    ]
+                  }
+                },
+                "annotation": {
+                  "meta": null,
+                  "sourceSpan": {
+                    "end": [
+                      180,
+                      74
+                    ],
+                    "start": [
+                      180,
+                      3
+                    ]
+                  },
+                  "type": {
+                    "Func": {
+                      "args": [
+                        "String"
+                      ],
+                      "ret": "Boolean"
+                    }
+                  }
+                },
+                "argument": {
+                  "abstraction": {
+                    "annotation": {
+                      "meta": null,
+                      "sourceSpan": {
+                        "end": [
+                          0,
+                          0
+                        ],
+                        "start": [
+                          0,
+                          0
+                        ]
+                      },
+                      "type": null
+                    },
+                    "type": "Var",
+                    "value": {
+                      "identifier": "show",
+                      "moduleName": [
+                        "Test",
+                        "Main"
+                      ]
+                    }
+                  },
+                  "annotation": {
+                    "meta": null,
+                    "sourceSpan": {
+                      "end": [
+                        180,
+                        60
+                      ],
+                      "start": [
+                        180,
+                        35
+                      ]
+                    },
+                    "type": "String"
+                  },
+                  "argument": {
+                    "abstraction": {
+                      "abstraction": {
+                        "annotation": {
+                          "meta": null,
+                          "sourceSpan": {
+                            "end": [
+                              0,
+                              0
+                            ],
+                            "start": [
+                              0,
+                              0
+                            ]
+                          },
+                          "type": null
+                        },
+                        "type": "Var",
+                        "value": {
+                          "identifier": "div",
+                          "moduleName": [
+                            "Test",
+                            "Main"
+                          ]
+                        }
+                      },
+                      "annotation": {
+                        "meta": null,
+                        "sourceSpan": {
+                          "end": [
+                            180,
+                            59
+                          ],
+                          "start": [
+                            180,
+                            41
+                          ]
+                        },
+                        "type": {
+                          "Func": {
+                            "args": [
+                              "Number"
+                            ],
+                            "ret": "Number"
+                          }
+                        }
+                      },
+                      "argument": {
+                        "annotation": {
+                          "meta": null,
+                          "sourceSpan": {
+                            "end": [
+                              180,
+                              44
+                            ],
+                            "start": [
+                              180,
+                              41
+                            ]
+                          },
+                          "type": "Number"
+                        },
+                        "type": "Literal",
+                        "value": {
+                          "literalType": "NumberLiteral",
+                          "value": 1
+                        }
+                      },
+                      "type": "App"
+                    },
+                    "annotation": {
+                      "meta": null,
+                      "sourceSpan": {
+                        "end": [
+                          180,
+                          59
+                        ],
+                        "start": [
+                          180,
+                          41
+                        ]
+                      },
+                      "type": "Number"
+                    },
+                    "argument": {
+                      "abstraction": {
+                        "annotation": {
+                          "meta": null,
+                          "sourceSpan": {
+                            "end": [
+                              0,
+                              0
+                            ],
+                            "start": [
+                              0,
+                              0
+                            ]
+                          },
+                          "type": null
+                        },
+                        "type": "Var",
+                        "value": {
+                          "identifier": "signum",
+                          "moduleName": [
+                            "Test",
+                            "Main"
+                          ]
+                        }
+                      },
+                      "annotation": {
+                        "meta": null,
+                        "sourceSpan": {
+                          "end": [
+                            180,
+                            58
+                          ],
+                          "start": [
+                            180,
+                            48
+                          ]
+                        },
+                        "type": "Number"
+                      },
+                      "argument": {
+                        "annotation": {
+                          "meta": null,
+                          "sourceSpan": {
+                            "end": [
+                              180,
+                              58
+                            ],
+                            "start": [
+                              180,
+                              55
+                            ]
+                          },
+                          "type": "Number"
+                        },
+                        "type": "Literal",
+                        "value": {
+                          "literalType": "NumberLiteral",
+                          "value": 0
+                        }
+                      },
+                      "type": "App"
+                    },
+                    "type": "App"
+                  },
+                  "type": "App"
+                },
+                "type": "App"
+              },
+              "annotation": {
+                "meta": null,
+                "sourceSpan": {
+                  "end": [
+                    180,
+                    74
+                  ],
+                  "start": [
+                    180,
+                    3
+                  ]
+                },
+                "type": "Boolean"
+              },
+              "argument": {
+                "annotation": {
+                  "meta": null,
+                  "sourceSpan": {
+                    "end": [
+                      180,
+                      74
+                    ],
+                    "start": [
+                      180,
+                      64
+                    ]
+                  },
+                  "type": "String"
+                },
+                "type": "Literal",
+                "value": {
+                  "literalType": "StringLiteral",
+                  "value": "Infinity"
+                }
+              },
+              "type": "App"
+            },
+            "type": "App"
+          },
+          "type": "App"
+        },
+        "annotation": {
+          "meta": null,
+          "sourceSpan": {
+            "end": [
+              180,
+              74
+            ],
+            "start": [
+              180,
+              3
+            ]
+          },
+          "type": {
+            "Func": {
+              "args": [
+                {
+                  "ADT": {
+                    "args": [],
+                    "path": [
+                      "Data",
+                      "Unit",
+                      "Unit"
+                    ]
+                  }
+                }
+              ],
+              "ret": {
+                "ADT": {
+                  "args": [],
+                  "path": [
+                    "Data",
+                    "Unit",
+                    "Unit"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "argument": {
+          "annotation": {
+            "meta": null,
+            "sourceSpan": {
+              "end": [
+                180,
+                74
+              ],
+              "start": [
+                180,
+                3
+              ]
+            },
+            "type": {
+              "Func": {
+                "args": [
+                  {
+                    "ADT": {
+                      "args": [],
+                      "path": [
+                        "Data",
+                        "Unit",
+                        "Unit"
+                      ]
+                    }
+                  },
+                  {
+                    "ADT": {
+                      "args": [],
+                      "path": [
+                        "Data",
+                        "Unit",
+                        "Unit"
+                      ]
+                    }
+                  }
+                ],
+                "ret": {
+                  "ADT": {
+                    "args": [],
+                    "path": [
+                      "Data",
+                      "Unit",
+                      "Unit"
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "argument": "$__unused",
+          "body": {
+            "abstraction": {
+              "abstraction": {
+                "annotation": {
+                  "meta": null,
+                  "sourceSpan": {
+                    "end": [
+                      0,
+                      0
+                    ],
+                    "start": [
+                      0,
+                      0
+                    ]
+                  },
+                  "type": null
+                },
+                "type": "Var",
+                "value": {
+                  "identifier": "discard",
+                  "moduleName": [
+                    "Test",
+                    "Main"
+                  ]
+                }
+              },
+              "annotation": {
+                "meta": null,
+                "sourceSpan": {
+                  "end": [
+                    181,
+                    100
+                  ],
+                  "start": [
+                    181,
+                    3
+                  ]
+                },
+                "type": {
+                  "Func": {
+                    "args": [
+                      {
+                        "Func": {
+                          "args": [
+                            {
+                              "ADT": {
+                                "args": [],
+                                "path": [
+                                  "Data",
+                                  "Unit",
+                                  "Unit"
+                                ]
+                              }
+                            },
+                            {
+                              "ADT": {
+                                "args": [],
+                                "path": [
+                                  "Data",
+                                  "Unit",
+                                  "Unit"
+                                ]
+                              }
+                            }
+                          ],
+                          "ret": {
+                            "ADT": {
+                              "args": [],
+                              "path": [
+                                "Data",
+                                "Unit",
+                                "Unit"
+                              ]
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "ADT": {
+                          "args": [],
+                          "path": [
+                            "Data",
+                            "Unit",
+                            "Unit"
+                          ]
+                        }
+                      }
+                    ],
+                    "ret": {
+                      "ADT": {
+                        "args": [],
+                        "path": [
+                          "Data",
+                          "Unit",
+                          "Unit"
+                        ]
+                      }
+                    }
+                  }
+                }
+              },
+              "argument": {
+                "abstraction": {
+                  "abstraction": {
+                    "annotation": {
+                      "meta": {
+                        "metaType": "IsForeign"
+                      },
+                      "sourceSpan": {
+                        "end": [
+                          181,
+                          9
+                        ],
+                        "start": [
+                          181,
+                          3
+                        ]
+                      },
+                      "type": {
+                        "Func": {
+                          "args": [
+                            "String",
+                            "Boolean",
+                            {
+                              "ADT": {
+                                "args": [],
+                                "path": [
+                                  "Data",
+                                  "Unit",
+                                  "Unit"
+                                ]
+                              }
+                            }
+                          ],
+                          "ret": {
+                            "ADT": {
+                              "args": [],
+                              "path": [
+                                "Data",
+                                "Unit",
+                                "Unit"
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "type": "Var",
+                    "value": {
+                      "identifier": "assert",
+                      "moduleName": [
+                        "Test",
+                        "Utils"
+                      ]
+                    }
+                  },
+                  "annotation": {
+                    "meta": null,
+                    "sourceSpan": {
+                      "end": [
+                        181,
+                        63
+                      ],
+                      "start": [
+                        181,
+                        3
+                      ]
+                    },
+                    "type": {
+                      "Func": {
+                        "args": [
+                          "Boolean",
+                          {
+                            "ADT": {
+                              "args": [],
+                              "path": [
+                                "Data",
+                                "Unit",
+                                "Unit"
+                              ]
+                            }
+                          }
+                        ],
+                        "ret": {
+                          "ADT": {
+                            "args": [],
+                            "path": [
+                              "Data",
+                              "Unit",
+                              "Unit"
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "argument": {
+                    "annotation": {
+                      "meta": null,
+                      "sourceSpan": {
+                        "end": [
+                          181,
+                          63
+                        ],
+                        "start": [
+                          181,
+                          10
+                        ]
+                      },
+                      "type": "String"
+                    },
+                    "type": "Literal",
+                    "value": {
+                      "literalType": "StringLiteral",
+                      "value": "Clarifies what 'signum negative zero' test is doing"
+                    }
+                  },
+                  "type": "App"
+                },
+                "annotation": {
+                  "meta": null,
+                  "sourceSpan": {
+                    "end": [
+                      181,
+                      100
+                    ],
+                    "start": [
+                      181,
+                      3
+                    ]
+                  },
+                  "type": {
+                    "Func": {
+                      "args": [
+                        {
+                          "ADT": {
+                            "args": [],
+                            "path": [
+                              "Data",
+                              "Unit",
+                              "Unit"
+                            ]
+                          }
+                        }
+                      ],
+                      "ret": {
+                        "ADT": {
+                          "args": [],
+                          "path": [
+                            "Data",
+                            "Unit",
+                            "Unit"
+                          ]
+                        }
+                      }
+                    }
+                  }
+                },
+                "argument": {
+                  "abstraction": {
+                    "abstraction": {
+                      "annotation": {
+                        "meta": null,
+                        "sourceSpan": {
+                          "end": [
+                            0,
+                            0
+                          ],
+                          "start": [
+                            0,
+                            0
+                          ]
+                        },
+                        "type": null
+                      },
+                      "type": "Var",
+                      "value": {
+                        "identifier": "eq",
+                        "moduleName": [
+                          "Test",
+                          "Main"
+                        ]
+                      }
+                    },
+                    "annotation": {
+                      "meta": null,
+                      "sourceSpan": {
+                        "end": [
+                          181,
+                          100
+                        ],
+                        "start": [
+                          181,
+                          3
+                        ]
+                      },
+                      "type": {
+                        "Func": {
+                          "args": [
+                            "String"
+                          ],
+                          "ret": "Boolean"
+                        }
+                      }
+                    },
+                    "argument": {
+                      "abstraction": {
+                        "annotation": {
+                          "meta": null,
+                          "sourceSpan": {
+                            "end": [
+                              0,
+                              0
+                            ],
+                            "start": [
+                              0,
+                              0
+                            ]
+                          },
+                          "type": null
+                        },
+                        "type": "Var",
+                        "value": {
+                          "identifier": "show",
+                          "moduleName": [
+                            "Test",
+                            "Main"
+                          ]
+                        }
+                      },
+                      "annotation": {
+                        "meta": null,
+                        "sourceSpan": {
+                          "end": [
+                            181,
+                            85
+                          ],
+                          "start": [
+                            181,
+                            66
+                          ]
+                        },
+                        "type": "String"
+                      },
+                      "argument": {
+                        "abstraction": {
+                          "abstraction": {
+                            "annotation": {
+                              "meta": null,
+                              "sourceSpan": {
+                                "end": [
+                                  0,
+                                  0
+                                ],
+                                "start": [
+                                  0,
+                                  0
+                                ]
+                              },
+                              "type": null
+                            },
+                            "type": "Var",
+                            "value": {
+                              "identifier": "div",
+                              "moduleName": [
+                                "Test",
+                                "Main"
+                              ]
+                            }
+                          },
+                          "annotation": {
+                            "meta": null,
+                            "sourceSpan": {
+                              "end": [
+                                181,
+                                84
+                              ],
+                              "start": [
+                                181,
+                                72
+                              ]
+                            },
+                            "type": {
+                              "Func": {
+                                "args": [
+                                  "Number"
+                                ],
+                                "ret": "Number"
+                              }
+                            }
+                          },
+                          "argument": {
+                            "annotation": {
+                              "meta": null,
+                              "sourceSpan": {
+                                "end": [
+                                  181,
+                                  75
+                                ],
+                                "start": [
+                                  181,
+                                  72
+                                ]
+                              },
+                              "type": "Number"
+                            },
+                            "type": "Literal",
+                            "value": {
+                              "literalType": "NumberLiteral",
+                              "value": 1
+                            }
+                          },
+                          "type": "App"
+                        },
+                        "annotation": {
+                          "meta": null,
+                          "sourceSpan": {
+                            "end": [
+                              181,
+                              84
+                            ],
+                            "start": [
+                              181,
+                              72
+                            ]
+                          },
+                          "type": "Number"
+                        },
+                        "argument": {
+                          "abstraction": {
+                            "annotation": {
+                              "meta": null,
+                              "sourceSpan": {
+                                "end": [
+                                  0,
+                                  0
+                                ],
+                                "start": [
+                                  0,
+                                  0
+                                ]
+                              },
+                              "type": null
+                            },
+                            "type": "Var",
+                            "value": {
+                              "identifier": "negate",
+                              "moduleName": [
+                                "Test",
+                                "Main"
+                              ]
+                            }
+                          },
+                          "annotation": {
+                            "meta": null,
+                            "sourceSpan": {
+                              "end": [
+                                181,
+                                83
+                              ],
+                              "start": [
+                                181,
+                                79
+                              ]
+                            },
+                            "type": "Number"
+                          },
+                          "argument": {
+                            "annotation": {
+                              "meta": null,
+                              "sourceSpan": {
+                                "end": [
+                                  181,
+                                  83
+                                ],
+                                "start": [
+                                  181,
+                                  80
+                                ]
+                              },
+                              "type": "Number"
+                            },
+                            "type": "Literal",
+                            "value": {
+                              "literalType": "NumberLiteral",
+                              "value": 0
+                            }
+                          },
+                          "type": "App"
+                        },
+                        "type": "App"
+                      },
+                      "type": "App"
+                    },
+                    "type": "App"
+                  },
+                  "annotation": {
+                    "meta": null,
+                    "sourceSpan": {
+                      "end": [
+                        181,
+                        100
+                      ],
+                      "start": [
+                        181,
+                        3
+                      ]
+                    },
+                    "type": "Boolean"
+                  },
+                  "argument": {
+                    "annotation": {
+                      "meta": null,
+                      "sourceSpan": {
+                        "end": [
+                          181,
+                          100
+                        ],
+                        "start": [
+                          181,
+                          89
+                        ]
+                      },
+                      "type": "String"
+                    },
+                    "type": "Literal",
+                    "value": {
+                      "literalType": "StringLiteral",
+                      "value": "-Infinity"
+                    }
+                  },
+                  "type": "App"
+                },
+                "type": "App"
+              },
+              "type": "App"
+            },
+            "annotation": {
+              "meta": null,
+              "sourceSpan": {
+                "end": [
+                  181,
+                  100
+                ],
+                "start": [
+                  181,
+                  3
+                ]
+              },
+              "type": {
+                "Func": {
+                  "args": [
+                    {
+                      "ADT": {
+                        "args": [],
+                        "path": [
+                          "Data",
+                          "Unit",
+                          "Unit"
+                        ]
+                      }
+                    }
+                  ],
+                  "ret": {
+                    "ADT": {
+                      "args": [],
+                      "path": [
+                        "Data",
+                        "Unit",
+                        "Unit"
+                      ]
+                    }
+                  }
+                }
+              }
+            },
+            "argument": {
+              "annotation": {
+                "meta": null,
+                "sourceSpan": {
+                  "end": [
+                    181,
+                    100
+                  ],
+                  "start": [
+                    181,
+                    3
+                  ]
+                },
+                "type": {
+                  "Func": {
+                    "args": [
+                      {
+                        "ADT": {
+                          "args": [],
+                          "path": [
+                            "Data",
+                            "Unit",
+                            "Unit"
+                          ]
+                        }
+                      },
+                      {
+                        "ADT": {
+                          "args": [],
+                          "path": [
+                            "Data",
+                            "Unit",
+                            "Unit"
+                          ]
+                        }
+                      }
+                    ],
+                    "ret": {
+                      "ADT": {
+                        "args": [],
+                        "path": [
+                          "Data",
+                          "Unit",
+                          "Unit"
+                        ]
+                      }
+                    }
+                  }
+                }
+              },
+              "argument": "$__unused",
+              "body": {
+                "abstraction": {
+                  "abstraction": {
+                    "annotation": {
+                      "meta": {
+                        "metaType": "IsForeign"
+                      },
+                      "sourceSpan": {
+                        "end": [
+                          182,
+                          9
+                        ],
+                        "start": [
+                          182,
+                          3
+                        ]
+                      },
+                      "type": {
+                        "Func": {
+                          "args": [
+                            "String",
+                            "Boolean",
+                            {
+                              "ADT": {
+                                "args": [],
+                                "path": [
+                                  "Data",
+                                  "Unit",
+                                  "Unit"
+                                ]
+                              }
+                            }
+                          ],
+                          "ret": {
+                            "ADT": {
+                              "args": [],
+                              "path": [
+                                "Data",
+                                "Unit",
+                                "Unit"
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "type": "Var",
+                    "value": {
+                      "identifier": "assert",
+                      "moduleName": [
+                        "Test",
+                        "Utils"
+                      ]
+                    }
+                  },
+                  "annotation": {
+                    "meta": null,
+                    "sourceSpan": {
+                      "end": [
+                        182,
+                        32
+                      ],
+                      "start": [
+                        182,
+                        3
+                      ]
+                    },
+                    "type": {
+                      "Func": {
+                        "args": [
+                          "Boolean",
+                          {
+                            "ADT": {
+                              "args": [],
+                              "path": [
+                                "Data",
+                                "Unit",
+                                "Unit"
+                              ]
+                            }
+                          }
+                        ],
+                        "ret": {
+                          "ADT": {
+                            "args": [],
+                            "path": [
+                              "Data",
+                              "Unit",
+                              "Unit"
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "argument": {
+                    "annotation": {
+                      "meta": null,
+                      "sourceSpan": {
+                        "end": [
+                          182,
+                          32
+                        ],
+                        "start": [
+                          182,
+                          10
+                        ]
+                      },
+                      "type": "String"
+                    },
+                    "type": "Literal",
+                    "value": {
+                      "literalType": "StringLiteral",
+                      "value": "signum negative zero"
+                    }
+                  },
+                  "type": "App"
+                },
+                "annotation": {
+                  "meta": null,
+                  "sourceSpan": {
+                    "end": [
+                      182,
+                      78
+                    ],
+                    "start": [
+                      182,
+                      3
+                    ]
+                  },
+                  "type": {
+                    "Func": {
+                      "args": [
+                        {
+                          "ADT": {
+                            "args": [],
+                            "path": [
+                              "Data",
+                              "Unit",
+                              "Unit"
+                            ]
+                          }
+                        }
+                      ],
+                      "ret": {
+                        "ADT": {
+                          "args": [],
+                          "path": [
+                            "Data",
+                            "Unit",
+                            "Unit"
+                          ]
+                        }
+                      }
+                    }
+                  }
+                },
+                "argument": {
+                  "abstraction": {
+                    "abstraction": {
+                      "annotation": {
+                        "meta": null,
+                        "sourceSpan": {
+                          "end": [
+                            0,
+                            0
+                          ],
+                          "start": [
+                            0,
+                            0
+                          ]
+                        },
+                        "type": null
+                      },
+                      "type": "Var",
+                      "value": {
+                        "identifier": "eq",
+                        "moduleName": [
+                          "Test",
+                          "Main"
+                        ]
+                      }
+                    },
+                    "annotation": {
+                      "meta": null,
+                      "sourceSpan": {
+                        "end": [
+                          182,
+                          78
+                        ],
+                        "start": [
+                          182,
+                          3
+                        ]
+                      },
+                      "type": {
+                        "Func": {
+                          "args": [
+                            "String"
+                          ],
+                          "ret": "Boolean"
+                        }
+                      }
+                    },
+                    "argument": {
+                      "abstraction": {
+                        "annotation": {
+                          "meta": null,
+                          "sourceSpan": {
+                            "end": [
+                              0,
+                              0
+                            ],
+                            "start": [
+                              0,
+                              0
+                            ]
+                          },
+                          "type": null
+                        },
+                        "type": "Var",
+                        "value": {
+                          "identifier": "show",
+                          "moduleName": [
+                            "Test",
+                            "Main"
+                          ]
+                        }
+                      },
+                      "annotation": {
+                        "meta": null,
+                        "sourceSpan": {
+                          "end": [
+                            182,
+                            63
+                          ],
+                          "start": [
+                            182,
+                            35
+                          ]
+                        },
+                        "type": "String"
+                      },
+                      "argument": {
+                        "abstraction": {
+                          "abstraction": {
+                            "annotation": {
+                              "meta": null,
+                              "sourceSpan": {
+                                "end": [
+                                  0,
+                                  0
+                                ],
+                                "start": [
+                                  0,
+                                  0
+                                ]
+                              },
+                              "type": null
+                            },
+                            "type": "Var",
+                            "value": {
+                              "identifier": "div",
+                              "moduleName": [
+                                "Test",
+                                "Main"
+                              ]
+                            }
+                          },
+                          "annotation": {
+                            "meta": null,
+                            "sourceSpan": {
+                              "end": [
+                                182,
+                                62
+                              ],
+                              "start": [
+                                182,
+                                41
+                              ]
+                            },
+                            "type": {
+                              "Func": {
+                                "args": [
+                                  "Number"
+                                ],
+                                "ret": "Number"
+                              }
+                            }
+                          },
+                          "argument": {
+                            "annotation": {
+                              "meta": null,
+                              "sourceSpan": {
+                                "end": [
+                                  182,
+                                  44
+                                ],
+                                "start": [
+                                  182,
+                                  41
+                                ]
+                              },
+                              "type": "Number"
+                            },
+                            "type": "Literal",
+                            "value": {
+                              "literalType": "NumberLiteral",
+                              "value": 1
+                            }
+                          },
+                          "type": "App"
+                        },
+                        "annotation": {
+                          "meta": null,
+                          "sourceSpan": {
+                            "end": [
+                              182,
+                              62
+                            ],
+                            "start": [
+                              182,
+                              41
+                            ]
+                          },
+                          "type": "Number"
+                        },
+                        "argument": {
+                          "abstraction": {
+                            "annotation": {
+                              "meta": null,
+                              "sourceSpan": {
+                                "end": [
+                                  0,
+                                  0
+                                ],
+                                "start": [
+                                  0,
+                                  0
+                                ]
+                              },
+                              "type": null
+                            },
+                            "type": "Var",
+                            "value": {
+                              "identifier": "signum",
+                              "moduleName": [
+                                "Test",
+                                "Main"
+                              ]
+                            }
+                          },
+                          "annotation": {
+                            "meta": null,
+                            "sourceSpan": {
+                              "end": [
+                                182,
+                                61
+                              ],
+                              "start": [
+                                182,
+                                48
+                              ]
+                            },
+                            "type": "Number"
+                          },
+                          "argument": {
+                            "abstraction": {
+                              "annotation": {
+                                "meta": null,
+                                "sourceSpan": {
+                                  "end": [
+                                    0,
+                                    0
+                                  ],
+                                  "start": [
+                                    0,
+                                    0
+                                  ]
+                                },
+                                "type": null
+                              },
+                              "type": "Var",
+                              "value": {
+                                "identifier": "negate",
+                                "moduleName": [
+                                  "Test",
+                                  "Main"
+                                ]
+                              }
+                            },
+                            "annotation": {
+                              "meta": null,
+                              "sourceSpan": {
+                                "end": [
+                                  182,
+                                  60
+                                ],
+                                "start": [
+                                  182,
+                                  56
+                                ]
+                              },
+                              "type": "Number"
+                            },
+                            "argument": {
+                              "annotation": {
+                                "meta": null,
+                                "sourceSpan": {
+                                  "end": [
+                                    182,
+                                    60
+                                  ],
+                                  "start": [
+                                    182,
+                                    57
+                                  ]
+                                },
+                                "type": "Number"
+                              },
+                              "type": "Literal",
+                              "value": {
+                                "literalType": "NumberLiteral",
+                                "value": 0
+                              }
+                            },
+                            "type": "App"
+                          },
+                          "type": "App"
+                        },
+                        "type": "App"
+                      },
+                      "type": "App"
+                    },
+                    "type": "App"
+                  },
+                  "annotation": {
+                    "meta": null,
+                    "sourceSpan": {
+                      "end": [
+                        182,
+                        78
+                      ],
+                      "start": [
+                        182,
+                        3
+                      ]
+                    },
+                    "type": "Boolean"
+                  },
+                  "argument": {
+                    "annotation": {
+                      "meta": null,
+                      "sourceSpan": {
+                        "end": [
+                          182,
+                          78
+                        ],
+                        "start": [
+                          182,
+                          67
+                        ]
+                      },
+                      "type": "String"
+                    },
+                    "type": "Literal",
+                    "value": {
+                      "literalType": "StringLiteral",
+                      "value": "-Infinity"
+                    }
+                  },
+                  "type": "App"
+                },
+                "type": "App"
+              },
+              "type": "Abs"
+            },
+            "type": "App"
+          },
+          "type": "Abs"
+        },
+        "type": "App"
+      },
+      "type": "Abs"
+    },
+    "type": "App"
+  },
+  "identifier": "testSignum"
+}
