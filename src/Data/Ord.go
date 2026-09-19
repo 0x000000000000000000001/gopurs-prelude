@@ -11,12 +11,12 @@ func OrdIntImpl(lt interface{}, eq interface{}, gt interface{}, x int64, y int64
 	if x == y { return eq }
 	return gt
 }
-func OrdCharImpl(lt interface{}, eq interface{}, gt interface{}, x string, y string) interface{} {
+func OrdCharImpl[T any](lt T, eq T, gt T, x string, y string) T {
 	if x < y { return lt }
 	if x == y { return eq }
 	return gt
 }
-func OrdStringImpl(lt interface{}, eq interface{}, gt interface{}, x string, y string) interface{} {
+func OrdStringImpl[T any](lt T, eq T, gt T, x string, y string) T {
 	if x < y { return lt }
 	if x == y { return eq }
 	return gt
