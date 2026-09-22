@@ -17,7 +17,7 @@ func UnsafeGet(label string, recVal interface{}) interface{} {
 func UnsafeSet(label string, value interface{}, recVal interface{}) interface{} {
 	v := recVal.(gopurs_runtime.Value)
 	val := value.(gopurs_runtime.Value)
-	return gopurs_runtime.RecordUpdate1(v, label, val)
+	return gopurs_runtime.RecordSet(v, label, val)
 }
 
 func UnsafeDelete(label string, recVal interface{}) interface{} {
