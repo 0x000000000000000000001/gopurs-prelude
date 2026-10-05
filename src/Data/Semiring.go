@@ -1,8 +1,10 @@
+import "gopurs/output/gopurs_runtime"
+
 func IntAdd(x int64, y int64) int64 {
-	return x + y
+	return gopurs_runtime.IntAdd(x, y)
 }
 func IntMul(x int64, y int64) int64 {
-	return x * y
+	return gopurs_runtime.IntMul(x, y)
 }
 func NumAdd(n1 float64, n2 float64) float64 {
 	return n1 + n2

@@ -1,5 +1,7 @@
+import "gopurs/output/gopurs_runtime"
+
 func ConcatString(s1 string, s2 string) string {
-	return s1 + s2
+	return gopurs_runtime.ConcatString(s1, s2)
 }
 func ConcatArray(xs []interface{}, ys []interface{}) []interface{} {
 	if len(xs) == 0 {
