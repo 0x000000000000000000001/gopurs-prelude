@@ -8,7 +8,10 @@ func ShowIntImpl(n int64) string {
 	return fmt.Sprintf("%v", n)
 }
 func ShowNumberImpl(n float64) string {
-	if math.IsNaN(n) {
+	if n == 0 {
+		// JavaScript Number#toString renders both signed zeros as "0".
+		return "0.0"
+	} else if math.IsNaN(n) {
 		return "NaN"
 	} else if math.IsInf(n, 1) {
 		return "Infinity"
@@ -17,15 +20,16 @@ func ShowNumberImpl(n float64) string {
 	}
 
 	absN := math.Abs(n)
-	var str string
-	if absN != 0 && (absN >= 1e21 || absN < 1e-6) {
-		str = strconv.FormatFloat(n, 'g', -1, 64)
-		// Go uses e-07 but JS uses e-7. We won't worry too much unless a test fails.
-	} else {
-		str = strconv.FormatFloat(n, 'f', -1, 64)
+	if absN >= 1e21 || absN < 1e-6 {
+		// Keep the shortest round-tripping digits, with JS notation thresholds
+		// and an unpadded exponent (Go's e-07 becomes JavaScript's e-7).
+		str := strconv.FormatFloat(n, 'e', -1, 64)
+		exponent := strings.IndexByte(str, 'e')
+		return str[:exponent+2] + strings.TrimLeft(str[exponent+2:], "0")
 	}
 
-	if strings.Contains(str, ".") || strings.Contains(str, "e") {
+	str := strconv.FormatFloat(n, 'f', -1, 64)
+	if strings.Contains(str, ".") {
 		return str
 	}
 	return str + ".0"
