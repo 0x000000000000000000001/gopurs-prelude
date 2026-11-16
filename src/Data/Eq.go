@@ -1,3 +1,5 @@
+import r "gopurs/output/gopurs_runtime"
+
 func refEq(r1 interface{}, r2 interface{}) bool {
 	return r1 == r2
 }
@@ -16,12 +18,12 @@ func EqCharImpl(r1 string, r2 string) bool {
 func EqStringImpl(r1 string, r2 string) bool {
 	return r1 == r2
 }
-func EqArrayImpl(f func(interface{}, interface{}) bool, xs []interface{}, ys []interface{}) bool {
+func EqArrayImpl(f func(r.Value, r.Value) r.Value, xs []r.Value, ys []r.Value) bool {
 	if len(xs) != len(ys) {
 		return false
 	}
 	for i := range xs {
-		if !f(xs[i], ys[i]) {
+		if !r.Unbox[bool](f(xs[i], ys[i])) {
 			return false
 		}
 	}
