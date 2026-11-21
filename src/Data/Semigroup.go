@@ -3,14 +3,14 @@ import "gopurs/output/gopurs_runtime"
 func ConcatString(s1 string, s2 string) string {
 	return gopurs_runtime.ConcatString(s1, s2)
 }
-func ConcatArray(xs []interface{}, ys []interface{}) []interface{} {
+func ConcatArray(xs []gopurs_runtime.Value, ys []gopurs_runtime.Value) []gopurs_runtime.Value {
 	if len(xs) == 0 {
 		return ys
 	}
 	if len(ys) == 0 {
 		return xs
 	}
-	res := make([]interface{}, 0, len(xs)+len(ys))
+	res := make([]gopurs_runtime.Value, 0, len(xs)+len(ys))
 	res = append(res, xs...)
 	res = append(res, ys...)
 	return res
